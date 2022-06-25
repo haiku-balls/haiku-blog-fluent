@@ -2,19 +2,16 @@
 @use "src/site/styles/mixins" as *;
 
 :global {
+	body {
+		position: relative;
+	}
 	#hero-section {
 		@include flex($direction: column, $justify: center, $align: center);
-		position: relative;
-		min-block-size: 596px;
+		min-block-size: 100vh;
 		text-align: center;
-		background: url("/bloom-mica-light.png") center/170% no-repeat;
+		background: url("/bloom-mica-light.png") repeat center center fixed;
 		@media (prefers-color-scheme: dark) {
 			background-image: url("/bloom-mica-dark.png");
-		}
-		> .page-section-inner {
-			@include flex($direction: column, $align: center);
-			position: relative;
-			padding-block: 58px 128px;
 		}
 		h1 {
 			font-size: 5.4rem;
@@ -42,12 +39,12 @@
 .hero- {
 	&contents,
 	&cards {
-		position: relative;
+		position: relative; // DONT TOUCH THAT.
 	}
 	&cards {
-		padding: 0 72px;
+		left: 5%;
+		padding: 150px 72px 0px 72px;
 		text-align: start;
-		position: absolute;
 		display: grid;
 		grid-gap: 24px;
 		inset-block-start: calc(100% - 48px);
@@ -121,14 +118,5 @@
 		span {
 			display: block;
 		}
-	}
-}
-
-.example-app {
-	@include flex($direction: column, $align: center, $justify: center);
-	flex: 1 1 auto;
-	padding-bottom: 32px;
-	> div {
-		margin-top: 12px;
 	}
 }

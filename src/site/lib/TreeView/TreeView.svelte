@@ -59,8 +59,8 @@
 			<ListItem
 				on:click
 				type="navigation"
-				selected={`/docs${path}` === $page.url.pathname}
-				href="/docs{path}"
+				selected={`/forum${path}` === $page.url.pathname}
+				href="/forum{path}"
 			>
 				<svelte:fragment slot="icon">
 					{@html icon || ""}

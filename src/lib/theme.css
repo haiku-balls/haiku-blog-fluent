@@ -16,6 +16,8 @@
 		var(--fds-font-family-fallback);
 	--fds-font-family-small: "Segoe UI Variable Small", "Seoge UI Variable Static Small",
 		var(--fds-font-family-fallback);
+	--fds-font-family-bold: "Segoe UI Variable Bold", "Seoge UI Variable Static Bold",
+		var(--fds-font-family-fallback);
 	--fds-font-family-display: "Segoe UI Variable Display", "Seoge UI Variable Static Display",
 		var(--fds-font-family-fallback);
 

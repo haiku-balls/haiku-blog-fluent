@@ -24,92 +24,48 @@
 </script>
 
 <Metadata
-	title="Fluent Svelte"
-	description="A faithful implementation of Microsoft's Fluent Design System in Svelte."
+	title="Haiku's Blog"
+	description="blog yes"
 />
 
 <PageSection id="hero-section">
 	<div class="hero-contents">
-		<h1>Fluent Svelte</h1>
-		<p>A faithful implementation of Microsoft's Fluent Design System in Svelte.</p>
+		<h1>Haiku's Blog</h1>
+		<p>It's fluent wow :o</p>
 		<div class="buttons-spacer">
-			<Button variant="accent" href="/docs">Get Started</Button>
-			<Button
-				href="https://github.com/tropix126/fluent-svelte"
-				target="_blank"
-				rel="noreferrer noopener">Source Code</Button
-			>
+			<Button variant="accent" href="/forum">Read</Button>
+			<Button variant="standard" href="/about	">About</Button>
 		</div>
 	</div>
 
 	<div class="hero-cards">
 		<HeroCard>
 			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">1. Install</TextBlock>
-				<IconButton
-					href="https://npmjs.com/package/fluent-svelte"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					{@html Box}
-				</IconButton>
+				<TextBlock variant="bodyStrong">PLACEHOLDER (WITH A BUTTON)</TextBlock>
 			</svelte:fragment>
 
-			<TextBlock>npm</TextBlock>
-			<CopyBox value="npm i --save-dev fluent-svelte" />
-
-			<TextBlock>using pnpm</TextBlock>
-			<CopyBox value="pnpm i --save-dev fluent-svelte" />
-
-			<TextBlock>...or with yarn</TextBlock>
-			<CopyBox value="yarn add --dev fluent-svelte" />
-
-			<Button variant="accent">Learn More</Button>
+			<TextBlock>i like touhou</TextBlock>
+			<Button variant="accent">do something</Button>
 		</HeroCard>
 		<HeroCard>
 			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">2. Build</TextBlock>
-				<IconButton href="/docs">
+				<TextBlock variant="bodyStrong">PLACEHOLDER</TextBlock>
+				<IconButton href="/forum">
 					{@html Book}
 				</IconButton>
 			</svelte:fragment>
-
-			<div class="editor-body">
-				<ul class="editor-tabs">
-					<li>index.svelte</li>
-				</ul>
-				<div class="editor">
-					<aside class="line-numbers">
-						{#each example.split(/\r\n|\r|\n/) as line, i}
-							<span>{i + 1}</span>
-						{/each}
-					</aside>
-					<pre>
-                        <code>
-                            {@html example}
-                        </code>
-                    </pre>
-				</div>
-			</div>
 		</HeroCard>
 		<HeroCard>
 			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">3. View</TextBlock>
-				<IconButton
-					href="https://svelte.dev/repl/b90fb12e06e84aabb303121f713d1296"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					{@html Open}
-				</IconButton>
+				<TextBlock variant="bodyStrong">Test Content (PLACEHOLDER)</TextBlock>
 			</svelte:fragment>
 			<div class="example-app">
 				<TextBlock variant="display">{exampleCount}</TextBlock>
 				<div>
 					<Button variant="accent" on:click={() => (exampleCount += 1)}
-						>Increase Count</Button
+						>Increase</Button
 					>
-					<Button on:click={() => (exampleCount = 0)}>Reset Count</Button>
+					<Button on:click={() => (exampleCount = 0)}>Reset</Button>
 				</div>
 			</div>
 		</HeroCard>
