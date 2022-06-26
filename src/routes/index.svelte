@@ -31,44 +31,13 @@
 <PageSection id="hero-section">
 	<div class="hero-contents">
 		<h1>Haiku's Blog</h1>
-		<p style="text-align: center;">It's fluent wow :o</p>
+		<p>it's fluent wow :o.</p>
 		<div class="buttons-spacer">
 			<Button variant="accent" href="/forum">Read</Button>
-			<Button variant="standard" href="/about	">About</Button>
+			<Button
+				href="/forum">About</Button
+			>
 		</div>
-	</div>
-
-	<div class="hero-cards">
-		<HeroCard>
-			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">PLACEHOLDER (WITH A BUTTON)</TextBlock>
-			</svelte:fragment>
-
-			<TextBlock>i like touhou</TextBlock>
-			<Button variant="accent">do something</Button>
-		</HeroCard>
-		<HeroCard>
-			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">PLACEHOLDER</TextBlock>
-				<IconButton href="/forum">
-					{@html Book}
-				</IconButton>
-			</svelte:fragment>
-		</HeroCard>
-		<HeroCard>
-			<svelte:fragment slot="header">
-				<TextBlock variant="bodyStrong">Test Content (PLACEHOLDER)</TextBlock>
-			</svelte:fragment>
-			<div class="example-app">
-				<TextBlock variant="display">{exampleCount}</TextBlock>
-				<div>
-					<Button variant="accent" on:click={() => (exampleCount += 1)}
-						>Increase</Button
-					>
-					<Button on:click={() => (exampleCount = 0)}>Reset</Button>
-				</div>
-			</div>
-		</HeroCard>
 	</div>
 </PageSection>
 
