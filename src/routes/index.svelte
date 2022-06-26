@@ -31,7 +31,7 @@
 <PageSection id="hero-section">
 	<div class="hero-contents">
 		<h1>Haiku's Blog</h1>
-		<p>It's fluent wow :o</p>
+		<p style="text-align: center;">It's fluent wow :o</p>
 		<div class="buttons-spacer">
 			<Button variant="accent" href="/forum">Read</Button>
 			<Button variant="standard" href="/about	">About</Button>
